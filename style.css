@@ -15,19 +15,11 @@
 
 body {
     min-height: 100vh;
-    font-family: 'Outfit', sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    font-family: 'Outfit', sans-serif;    
     background-color: var(--light-gray);
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.container {    
     background-color: var(--white);    
     border-radius: 20px;
     box-shadow: 6px 14px 32px -11px rgba(0,0,0,0.65);
@@ -36,11 +28,12 @@ body {
 }
 
 img { 
-    border-radius: 20px;
+    border-radius: 10px;
     width: 100%;    
 }
 
-.top-content, .bottom-content {
+/* Display flex rules */
+body, .container, .top-content, .bottom-content {
     display: flex;
     flex-direction: column;
     justify-content: center;    
