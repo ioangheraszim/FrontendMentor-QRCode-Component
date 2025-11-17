@@ -42,12 +42,12 @@ img {
   width: 100%;
 }
 
-h4,
+h1,
 p {
   text-align: center;
 }
 
-h4 {
+h1 {
   color: var(--dark-blue);
   text-align: center;
   font-size: 1.4rem;
