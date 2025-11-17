@@ -1,68 +1,61 @@
 :root {
-    --white: #fff;
-    --light-gray: #d6e2f0;
-    --grayish-blue: #7b879d;
-    --dark-blue: hsl(218, 44%, 22%);
+  --white: #fff;
+  --light-gray: #d6e2f0;
+  --grayish-blue: #7b879d;
+  --dark-blue: hsl(218, 44%, 22%);
 }
 
-/* Reset values */ 
+/* Reset values */
 
-*, *::before, *::after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
-    min-height: 100vh;
-    font-family: 'Outfit', sans-serif;    
-    background-color: var(--light-gray);
+  min-height: 100vh;
+  font-family: "Outfit", sans-serif;
+  background-color: var(--light-gray);
 }
 
-.container {    
-    background-color: var(--white);    
-    border-radius: 20px;
-    box-shadow: 6px 14px 32px -11px rgba(0,0,0,0.65);
-    width: 340px;
-    height: 525px;   
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-img { 
-    border-radius: 10px;
-    width: 100%;    
+.container {
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
+  width: 320px;
+  height: 500px;
+  padding: 1rem;
 }
 
-/* Display flex rules */
-body, .container, .top-content, .bottom-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-    align-items: center;
+img {
+  border-radius: 10px;
+  width: 100%;
 }
 
-.top-content {
-    width: 300px;
-    height: 300px;
-    margin-bottom: 30px;
+h4,
+p {
+  text-align: center;
 }
 
-.bottom-content {    
-    text-align: center;
-    width: 80%;
+h4 {
+  color: var(--dark-blue);
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 1.25rem 0;
 }
 
-.bottom-content h4 {
-    font-weight: 700;
-    color: var(--dark-blue);
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-
-.bottom-content p {
-    color: var(--dark-blue);
-    margin: 0 10px;
-    font-weight: 400;
-    padding-bottom: 20px;
-    font-size: 15px;
-    opacity: 70%;
+p {
+  color: var(--grayish-blue);
+  font-size: 0.95rem;
+  margin: 0 1.25rem;
 }
